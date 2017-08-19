@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
 
 /**
  * Generated class for the FeedPage page.
@@ -15,12 +15,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FeedPage {
 
-  public nomeUsuario:string = "Erandir Junior";
+  public nomeUsuario: string = "Erandir Junior";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  public somaDoisNumeros(): void {
+    alert(10 + 10);
+  }
+
   ionViewDidLoad() {
+    this.somaDoisNumeros();
     console.log('ionViewDidLoad FeedPage');
   }
 
